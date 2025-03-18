@@ -6,7 +6,7 @@
     <a href="https://www.linkedin.com/in/rahul-deshmukh-purdue">Rahul Deshmukh</a>
   </p>
   <p align="center">
-<!--     <a href="">arXiv</a> |  -->
+    <a href="https://arxiv.org/abs/2503.12706">arXiv</a> | 
     <a href="https://satdepth.pythonanywhere.com/">Demo</a>
   </p>
 </p>
@@ -18,8 +18,13 @@ If you find our work useful in your research, please consider citing it.
 ---
 ## Citation 
 ```
-@inproceedings{satdepth,
-title={{SatDepth: A Novel Dataset for Satellite Image Matching}},
-year={2025}
+@misc{deshmukh2025satdepthnoveldatasetsatellite,
+      title={SatDepth: A Novel Dataset for Satellite Image Matching}, 
+      author={Rahul Deshmukh and Avinash Kak},
+      year={2025},
+      eprint={2503.12706},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2503.12706}, 
 }
 ```
