@@ -7,7 +7,7 @@
   </p>
   <p align="center">
     <a href="https://arxiv.org/abs/2503.12706">arXiv</a> | 
-    <a href="https://satdepth.pythonanywhere.com/">Demo</a>
+    <a href="https://satdepth.pythonanywhere.com/">Project Page</a>
   </p>
 </p>
 
