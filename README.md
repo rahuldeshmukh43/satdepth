@@ -6,7 +6,7 @@
     <a href="https://www.linkedin.com/in/rahul-deshmukh-purdue">Rahul Deshmukh</a>
   </p>
   <p align="center">
-    <a href="https://arxiv.org/abs/2503.12706">arXiv</a> | 
+    <a href="https://arxiv.org/abs/2503.12706">arxiv</a> | 
     <a href="https://satdepth.pythonanywhere.com/">Project Page</a>
   </p>
 </p>
