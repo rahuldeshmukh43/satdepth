@@ -1,0 +1,19 @@
+# yaml config file for training sat_loftr model
+#----------------------------dataset----------------------------------#
+# Jacksonville balanced train 12534 val - 1424
+train_pairlist: satdepth/data/satdepth/index/jax_balanced_train_pairs.csv 
+val_pairlist: satdepth/data/satdepth/index/jax_balanced_val_pairs.csv
+#------------------------------------------------------------------------#
+
+img_patch_size: 448 # img_patch_size and train_img_size should always be the same
+train_img_size: 448
+
+kp_mode: mixed # [sift, random, mixed]
+pct_sift: 0.5
+num_pts: 800 # initial number of pts to be drawn
+num_pts_retained: 128 # final matching pts
+
+funda_method: cameras
+
+# for resuming traning
+# resume_from_checkpoint: /mnt/cloudNAS4/Rahul/Projects/Models/satloftr/train_satdepth_448_8_2_with_rotaug/logs/tb_logs/outdoor-ot-400-bs=14/version_0/checkpoints/last.ckpt

@@ -1,0 +1,58 @@
+#----------------------------dataset----------------------------------#
+# NOTE: uncomment the test_pairlist for the dataset you want to test on
+
+# jacksonville 3238
+# test_pairlist: data/satdepth/index/jax_test_pairs.csv # same as jacksonville_test_pairs.csv
+
+# omaha 861
+# test_pairlist: data/satdepth/index/omaha_test_pairs.csv
+
+# ucsd 3081
+# test_pairlist: data/satdepth/index/ucsd_test_pairs.csv
+
+#argentina 1081
+# test_pairlist: data/satdepth/index/argentina_test_pairs.csv
+#------------------------------------------------------------------------#
+
+## For plots -- hard pairs
+# jacksonville
+# test_pairlist: data/satdepth/index/jax_hard_pairs_intersection_for_dataloading.csv
+# test_pairlist: data/satdepth/index/jax_hard_pairs_rel_track_for_dataloading.csv
+# test_pairlist: data/satdepth/index/jax_hard_pairs_time_diff_for_dataloading.csv
+
+# omaha
+# test_pairlist: data/satdepth/index/omaha_hard_pairs_intersection_for_dataloading.csv
+# test_pairlist: data/satdepth/index/omaha_hard_pairs_rel_track_for_dataloading.csv
+# test_pairlist: data/satdepth/index/omaha_hard_pairs_time_diff_for_dataloading.csv
+
+# ucsd
+# test_pairlist: data/satdepth/index/ucsd_hard_pairs_intersection_for_dataloading.csv
+# test_pairlist: data/satdepth/index/ucsd_hard_pairs_rel_track_for_dataloading.csv
+# test_pairlist: data/satdepth/index/ucsd_hard_pairs_time_diff_for_dataloading.csv
+
+# argentina
+# test_pairlist: data/satdepth/index/argentina_hard_pairs_intersection_for_dataloading.csv
+# test_pairlist: data/satdepth/index/argentina_hard_pairs_rel_track_for_dataloading.csv
+# test_pairlist: data/satdepth/index/argentina_hard_pairs_time_diff_for_dataloading.csv
+#------------------------------------------------------------------------#
+
+phase: test
+img_patch_size: 448 # img_patch_size and train_img_size should always be the same
+train_img_size: 448
+
+kp_mode: mixed # [sift, random, mixed]
+pct_sift: 0.5
+num_pts: 800 # initial number of pts to be drawn
+num_pts_retained: 128 # final matching pts
+
+funda_method: cameras #matches
+num_workers: 8
+match_thr: 0.5
+nMatchesKeep: 200
+
+#---------------- ckpts ----------------------------------#
+exp_name: train_satdepth_448_8_2_with_rotaug_balanced
+ckpt_path: sat_loftr_448_with_rot_aug.ckpt
+
+# exp_name: train_satdepth_448_8_2_without_rotaug_balanced
+# ckpt_path: sat_loftr_448_wo_rot_aug.ckpt
