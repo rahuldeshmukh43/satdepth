@@ -43,6 +43,11 @@ This repository provides code and resources for the **SatDepth** dataset. Please
 - [x] try launching train script -->
 
 ---
+## Announcements  
+- [24 Nov 2025] Our work has been accepted for publication in the *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)*. This page will be updated once the DOI becomes available.
+
+
+---
 ## Abstract
 
 Recent advances in deep-learning based methods for image matching have demonstrated their superiority over traditional algorithms, enabling correspondence estimation in challenging scenes with significant differences in viewing angles, illumination and weather conditions. However, the existing datasets, learning frameworks, and evaluation metrics for the deep-learning based methods are limited to ground-based images recorded with pinhole cameras and have not been explored for satellite images. In this paper, we present ``SatDepth'', a novel dataset that provides dense ground-truth correspondences for training image matching frameworks meant specifically for satellite images. Satellites capture images from various viewing angles and tracks through multiple revisits over a region. To manage this variability, we propose a dataset balancing strategy through a novel image rotation augmentation procedure. This procedure allows for the discovery of corresponding pixels even in the presence of large rotational differences between the images. We benchmark four existing image matching frameworks using our dataset and carry out an ablation study that confirms that the models trained with our dataset with rotation augmentation outperform (up to 40% increase in precision) the models trained with other datasets, especially when there exist large rotational differences between the images.
