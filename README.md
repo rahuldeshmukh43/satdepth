@@ -54,11 +54,17 @@ Recent advances in deep-learning based methods for image matching have demonstra
 
 ---
 ## Dataset Download Instructions
-The dataset is hosted on a private FTP server and has a total size of **611 GB**. You can download it using the following command:
+
+<!-- The dataset is hosted on a private FTP server and has a total size of **611 GB**. You can download it using the following command:
 
 ```shell
 wget -m -P <download-datadir> ftp://ftp.ecn.purdue.edu/satdepth/
-``` 
+```
+-->
+The dataset is zipped into tar files and has a total size of **611 GB**. You can download it using the following steps:
+- Download the tar files using `wget -m -P <download-datadir> https://engineering.purdue.edu/RVL/Database/satdepth/dataset/satdepth.tar.part.{0000..0122}`
+- Combine the tar files into a single tar file using `cat satdepth.tar.part.* > satdepth.tar`
+- Unzip the combined tar file using `tar -xf satdepth.tar`
 
 ---
 ## Setup
