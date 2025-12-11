@@ -45,6 +45,7 @@ This repository provides code and resources for the **SatDepth** dataset. Please
 ---
 ## Announcements  
 - [24 Nov 2025] Our work has been accepted for publication in the *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)*. This page will be updated once the DOI becomes available.
+- [11 Dec 2025] Early access to paper is now available on [IEEE Explore](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11268540)
 
 
 ---
@@ -164,15 +165,15 @@ We also provide scripts for testing with simulated rotation using the `<path-to-
 Please cite our work if you find it useful:
 
 ```bibtex
-@inproceedings{deshmukh2025satdepth,
-      Title={SatDepth: A Novel Dataset for Satellite Image Matching}, 
-      Author={Rahul Deshmukh and Avinash Kak},
-      Year={2025},
-      eprint={2503.12706},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2503.12706}, 
-}
+@ARTICLE{deshmukh2025satdepth,
+  author={Deshmukh, Rahul and Kak, Avinash C.},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}, 
+  title={SatDepth: A Novel Dataset for Satellite Image Matching}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-10},
+  doi={10.1109/JSTARS.2025.3637154}}
 ```
 
 </br>
