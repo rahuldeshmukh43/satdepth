@@ -6,7 +6,8 @@
     <a href="https://www.linkedin.com/in/rahul-deshmukh-purdue">Rahul Deshmukh</a>
   </p>
   <p align="center">
-    <a href="https://arxiv.org/abs/2503.12706">Paper</a> | 
+    <a href="https://ieeexplore.ieee.org/document/11268540">Paper</a> |
+    <a href="https://arxiv.org/abs/2503.12706">Preprint</a> | 
     <a href="https://satdepth.pythonanywhere.com/">Project Page</a>
   </p>
 </p>
@@ -169,10 +170,10 @@ Please cite our work if you find it useful:
   author={Deshmukh, Rahul and Kak, Avinash C.},
   journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}, 
   title={SatDepth: A Novel Dataset for Satellite Image Matching}, 
-  year={2025},
-  volume={},
+  year={2026},
+  volume={19},
   number={},
-  pages={1-10},
+  pages={894-903},
   doi={10.1109/JSTARS.2025.3637154}}
 ```
 
