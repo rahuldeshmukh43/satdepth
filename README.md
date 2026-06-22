@@ -47,7 +47,7 @@ This repository provides code and resources for the **SatDepth** dataset. Please
 ## Announcements  
 - [24 Nov 2025] Our work has been accepted for publication in the *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)*. This page will be updated once the DOI becomes available.
 - [11 Dec 2025] Early access to paper is now available on [IEEE Explore](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11268540)
-
+- [Jun 2026] Sharing the GCP annotations
 
 ---
 ## Abstract
@@ -159,6 +159,58 @@ To test the model on SatDepth dataset follow these steps:
 - Set `outdir` in the file `<path-to-satdepth-repo>/scripts/sat_loftr/sat_test.sh`. This is where the testing outputs will be saved
 - Run the testing script using the command `bash sat_test.sh <testing-set-name>`
 We also provide scripts for testing with simulated rotation using the `<path-to-satdepth-repo>/scripts/sat_loftr/sat_test_simulated_rot.sh`. To run this script, follow the above instructions for testing.
+
+---
+## Ground Control Point Annotations
+
+We share the archive [gcps.tar.gz](https://drive.google.com/file/d/1lOYg4TnMvMe0l2E32Kp-CBpwL2rE_lNh/view?usp=sharing), which contains annotations of Ground Control Points (GCPs) on satellite images as described in our paper. The GCP coordinates were originally recorded by [Innovative Imaging & Research Corp.](https://www.i2rcorp.com/about-us/resources/i2r-gcp-data), and we annotated their locations on the corresponding satellite images. The annotations can be viewed [here](https://satdepth.pythonanywhere.com/static/dataset/data/jacksonville/WV2_and_WV3/WV_1sqkm_0m_overlap_300m_padding/index_gcp_errors.html). The file structure of this archive mimics that of the dataset, and additional details are given below.
+
+<details>
+<summary><b>File Structure</b></summary>
+
+```
+gcps/
+└── aoi_rect_piece_<aoi_num>/
+    └── gcp/
+        ├── aoi_rect_piece_<aoi_num>_gcp.csv
+        ├── aoi_rect_piece_<aoi_num>_gcp.kml
+        └── annotations/
+            └── GCP_<gcp_id>_annotations.csv
+```
+
+| File | Description |
+|------|-------------|
+| `aoi_rect_piece_<aoi_num>_gcp.csv` | GCP coordinates for a given AOI |
+| `aoi_rect_piece_<aoi_num>_gcp.kml` | Same GCP data in KML format (viewable in Google Earth) |
+| `GCP_<gcp_id>_annotations.csv` | Per-GCP pixel annotations on satellite images |
+
+</details>
+
+<details>
+<summary><b>CSV Schemas</b></summary>
+
+**`aoi_rect_piece_<aoi_num>_gcp.csv`**
+
+| Column | Description |
+|--------|-------------|
+| `Point ID` | Unique identifier for the GCP |
+| `Latitude` | GCP latitude (degrees) |
+| `Longitude` | GCP longitude (degrees) |
+| `Height` | GCP elevation |
+
+**`GCP_<gcp_id>_annotations.csv`**
+
+| Column | Description |
+|--------|-------------|
+| `Image basename` | Filename of the satellite image |
+| `Lat` | GCP latitude (degrees) |
+| `Lon` | GCP longitude (degrees) |
+| `Ht` | GCP elevation |
+| `PixelX` | Annotated GCP pixel location (x) in the image (-1 when cannot annoatate) |
+| `PixelY` | Annotated GCP pixel location (y) in the image (-1 when cannot annoatate) |
+
+</details>
+
 
 ---
 ## Cite
