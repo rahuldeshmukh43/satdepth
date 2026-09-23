@@ -8,7 +8,8 @@
   <p align="center">
     <a href="https://ieeexplore.ieee.org/document/11268540">Paper</a> |
     <a href="https://arxiv.org/abs/2503.12706">Preprint</a> | 
-    <a href="https://satdepth.pythonanywhere.com/">Project Page</a>
+    <a href="https://satdepth.pythonanywhere.com/">Project Page</a> | 
+    <a href="https://deepwiki.com/rahuldeshmukh43/satdepth"> <img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"> </a>
   </p>
 </p>
 
